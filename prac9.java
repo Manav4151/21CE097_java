@@ -3,19 +3,19 @@
 public class prac9 {
     
     // boolean check method for return True or False
-        public static boolean check(int arr[][]) {
-            boolean b = true;
+        public static boolean check(int sud[][]) {
+            boolean T = true;
             for(int i=0; i<9;i++) {
                 int sum =0;
                 for(int j=0;j<9;j++) {
-                    sum =sum+ arr[i][j];
+                    sum =sum+ sud[i][j];
                 }
                 if(sum!=45) {
-                    b= false;
+                    T= false;
                     break;
                 }
             }
-            return b;
+            return T;
         }
 
     public static void main(String args[]) {
